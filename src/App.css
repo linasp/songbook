@@ -1,0 +1,98 @@
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5vw;
+}
+
+.SongsIndex li {
+  list-style: none;
+  margin-top: 0.1em;
+}
+
+.SongsIndex button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.SongsIndex input {
+	border: 1px solid lightgray;
+  padding: 0.2em;
+	font: inherit;
+}
+
+
+.SongsIndex .Search,
+.SongsIndex .Filters {
+  padding-top: 1em;
+}
+
+.SongName a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.SongArtist {
+  font-style: italic;
+  color:darkgrey;
+}
+
+.SongArtist:before {
+  content: " (";
+}
+
+.SongArtist:after {
+  content: ") ";
+}
+
+.SongTag {
+  color:lightgrey;
+  background-color: #de8450;
+  padding: 0 0.1em;
+  margin-right: 0.3em;
+}
+
+.SongLine {
+  display: block;
+}
+
+.SongLineComment {
+  font-style: italic;
+  color:darkgrey;
+}
+
+.SongChord:before {
+  content: "[";
+}
+
+.SongChord:after {
+  content: "]";
+}
+
+.SongChord {
+  color:#de8450;
+  padding: 0 0.1em;
+  font-style: normal;
+  border-radius: 5px;
+}
+
+.AutoScroll {
+  position: fixed;
+  bottom: 0;
+  right: 20px;  /* Avoid overlapping with the scrollbar */
+}
+
+.AutoScroll button {
+  display: block;
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
