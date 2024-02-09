@@ -1,0 +1,298 @@
+SONG: 5 Years Time
+ARTIST: Noah and the Whales
+MODE: ukulele
+CHORDS: C=0003 F=2010 G=0232
+TAGS: ukulele easy
+
+// Chords throughout the song: [C] [F] [G] [F]
+
+Oh well, in five years time we could be walking round a zoo
+With the sun shining down over me and you
+And there'll be love in the bodies of the elephants, too
+I'll put my hand over your eyes but you'll peek through
+
+And there'll be sun, sun, sun all over our bodies
+And sun, sun, sun all down our necks
+And there'll be sun, sun, sun all over our faces
+And sun, sun, sun, so what the heck
+
+'Cause I'll be laughing at all your silly little jokes
+And we'll be laughing about how we used to smoke
+All those stupid little cigarettes and drink stupid wine
+'Cause its what we needed to have a good time
+
+But it was fun, fun, fun when we were drinking
+It was fun, fun, fun when we were drunk
+And it was fun, fun, fun when we were laughing
+It was fun, fun, fun, oh, it was fun
+
+Oh well, I look at you and say it's the happiest that I've ever been
+And I'll say I no longer feel I have to be James Dean
+And she'll say, yeah well, I feel pretty a happy too
+And I'm always pretty happy when I'm just kicking back with you
+
+And it'll be love, love, love all through our bodies
+And love, love, love all through our minds
+And it'll be love, love, love all over her face
+And love, love, love all over mine
+
+And though admittedly all these moments are just in my head
+I'll be thinking bout them as I'm lying in bed
+And I know that admittedly it might not even come true
+But in my mind I'm havin' a pretty good time with you
+
+Oh, in five years time I might not know you
+In five years time we might not speak
+Oh, in five years time we might not get along
+In five years time you might just prove me wrong
+Oh, there'll be love, love, love wherever you go
+
+There'll be love, love, love wherever you go
+There'll be love, love, love wherever you go
+There'll be love, love, love wherever you go
+There'll be love, love, love wherever you go
+There'll be love, love, love wherever you go
+There'll be love, love, love wherever you go
+There'll be love, love, love wherever you go
+There'll be love
+
+SONG: Chupee
+ARTIST: Cocoon
+MODE: ukulele
+CHORDS: G=0232 Em=0432 Bm=4222 D7=2223 C=0003 Am=2000
+TAGS: ukulele easy
+
+// Intro : [G] [Em] [Bm] [D7] (2x)
+
+[G] We have gone to the co[Em]untry
+In your [Bm] old car [D7] 
+[G] We have lost our wa[Em]y
+So ma[Bm]ny times [D7] 
+ 
+// Refrain:
+
+ [C] Hello,  [Am] hello
+I  [G] take you on a tri[Bm]p
+ [C] Hello,  [Am] hello
+I  [G] take you on a tri[Bm]p
+  
+// [G] [Em] [Bm] [D7]  (2x) 
+ 
+[G] Eating your Chupa Chu[Em]p
+A [Bm] plane is making a lo[D7]op
+The [G] beavers are so cu[Em]te
+A [Bm] tree gave me a fru[D7]it
+
+// (Refrain)
+ 
+// [G] [Em] [Bm] [D7]  (2x) 
+ 
+// (Refrain)
+ 
+ [C] Hello (hello),  [Am] hello (hello)
+ [G] Hello (hello),  [Bm] hello (hello)
+ [C] Hello (hello),  [Am] hello (hello)
+ [G] Hello (hello),  [Bm] hello (hello)
+ 
+ [C] Hello (hello),  [Am] hello (hello)
+ [G] Hello (hello),  [Bm] hello (hello)
+ [C] Hello (hello),  [Am] hello (hello)
+ [G] Hello (hello),  [Bm] hello (hello)
+ 
+// [C] [Am] [G] [Bm] 
+// End on [G]
+
+SONG: Elephant Gun
+ARTIST: Beirut
+MODE: ukulele
+CHORDS: Am=2003 D7=2223 G=0232 C=0003 C/B=0002
+TAGS: ukulele
+
+// Intro: [Am] [D7] [G] [C] [C/B] x2
+
+// Verse:
+
+[Am] If I was [D7] young, I'd flee this [G] town
+I'd bury my [C] dreams [C/B] under[Am]ground
+As did [D7] I, we drink to [G] die, we drink ton[C][C/B]ight
+
+[Am] Far from [D7] home, elephant [G] gun
+Let's take them [C] down [C/B] one by [Am] one
+We'll lay it [D7] down, it's not been [G] found, it's not ar[C][C/B]ound
+
+// Chorus:
+
+[Am] Let the [D7] seasons be[G]gin - it [C] rolls [C/B] right [Am] on
+Let the [D7] seasons be[G]gin - take the [C] big [C/B] king [Am] down
+[Am] Let the [D7] seasons be[G]gin - it [C] rolls [C/B] right [Am] on
+Let the [D7] seasons be[G]gin - take the [C] big [C/B] king [Am] down
+
+// Bridge: [Am] [D7] [G] [C] [C/B] x4
+
+[Am] Oh [D7] oh oh [G] oh
+Oh [C] la [C/B] la [Am] la
+// x4
+
+// Interlude: [Am] [D7] [G] [C] [C/B] x8
+
+// Verse:
+
+[Am] And it rips [D7] through the [G] silence of our [C] camp [C/B] at [Am] night
+And it rips [D7] through the [G] night oh [C] la [C/B] la [Am] la
+[Am] And it rips [D7] through the [G] silence of our [C] camp [C/B] at [Am] night
+And it rips [D7] through the [G] silence, all that is [C] left is [C/B] all that I [Am] hide
+
+SONG: Suzanne
+ARTIST: Leonard Cohen
+MODE: guitar
+CHORDS: E=022100 F#m=244222 G#m=466444 A=x02220
+TAGS: fingerpicking calm
+
+// Chords are played with a fingerpicking pattern, adding in the sus4 note.
+
+[E] Suzanne takes you down to her place near the river
+You can [F#m] hear the boats go by, you can spend the night beside her
+And you [E] know that she's half-crazy but that's why you want to be there
+And she [G#m] feeds you tea and oranges that come [A] all the way from China
+And just [E] when you mean to tell her that you [F#m] have no love to give her
+Then she [E] gets you on her wavelength
+And she [F#m] lets the river answer that you've [E] always been her lover
+
+And you [G#m] want to travel with her, and you [A] want to travel blind
+And then you [E] know that she will trust you
+For you've [F#m] touched her perfect body with your [E] mind
+
+[E] And Jesus was a sailor when he walked upon the water
+And he [F#m] spent a long time watching from his lonely wooden tower
+And [E] when he knew for certain only drowning men could see him
+He said [G#m] all men will be sailors then un[A]til the sea shall free them
+But [E] he himself was broken, long [F#m] before the sky would open
+For[E]saken, almost human, he [F#m] sank beneath your wisdom like a [E] stone
+
+And you [G#m] want to travel with him, and you [A] want to travel blind
+And then you [E] think maybe you'll trust him
+For he's [F#m] touched your perfect body with his [E] mind
+
+[E] Now, Suzanne takes your hand and she leads you to the river
+She's [F#m] wearing rags and feathers from Salvation Army counters
+And the [E] sun pours down like honey on our lady of the harbor
+And she [G#m] shows you where to look among the garbage and the flowers
+There are [E] heroes in the seaweed, there are [F#m] children in the morning
+They are [E] leaning out for love and they will [F#m] lean that way forever
+While [E] Suzanne holds the mirror
+
+And you [G#m] want to travel with her, and you [A] want to travel blind
+And then you [E] know that you can trust her
+For she's [F#m] touched your perfect body with her [E] mind
+
+SONG: New Slang
+ARTIST: The Shins
+MODE: guitar
+CHORDS: 
+TAGS: indie
+
+// Intro
+// [Am]   [C]  [F]  [C]  [G]  [C]  [Am]   [G]  [C] 
+ 
+// Verse 1
+[Am]Gold teeth and a [C]curse for this [F]town
+[C]Were all in my [G]mouth
+Only [C]I don't know [F]how they got [Am]out, [G]dear
+[Am]Turn me back [C]into the [F]pet
+[C]I was when we [G]met
+[C]I was happier [F]then with no [Am]mind [G]set
+ 
+// Chorus
+[G]And if you'd a took to [C]me like
+A [F]gull [C]takes to the [G]wind
+Well, I'd a [G]jumped from [C]my tree
+And [F]I'd a [C]danced like the [F]king of the [C]eyesores
+[F]And the rest of our [C]lives would'a [G]fared well
+ 
+// Verse 2
+[Am]New slang when you [C]notice the [F]stripes
+[C]The dirt in your [G]fries
+Hope [C]it's right when you [F]die
+Old and [Am][G]bo..ny
+[Am]Dawn breaks like a [C]bull through the [F]hall
+[C]Never should'a [G]called
+But [C]my heads to the [F]wall
+And I'm [Am][G]lonely
+ 
+// Chorus
+[G]And if you'd a took to [C]me like
+A [F]gull [C]takes to the [G]wind
+Well, I'd a [G]jumped from [C]my tree
+And [F]I'd a [C]danced like the [F]king of the [C]eyesores
+[F]And the rest of our [C]lives would'a [G]fared well
+ 
+// Solo
+// [G]   [G]  [C]  [F] [C]   [F]  [C]  [G] 
+// [C]   [G]  [C]  [F] [F]   [C]   [F]  [C]  [G] 
+// [C] [Am] [G] [C] (hang and walk down to Am)
+ 
+// Verse 3
+[Am]God speed all the [C]baker's at [F]dawn
+May they all [C]cut their [G]thumbs
+And [C]bleed into their [F]buns
+'Till they [Am]melt [G]away
+ 
+// Chorus 2
+[G]I'm looking in on the [C]good life
+I might be [F]doomed [C]never to [G]find
+Without a trust or flaming [C]fields
+Am I [F]too [C]dumb to [G]refine?
+And if you'd a took to [C]me like
+Well [F]I'd a [C]danced like the [F]queen of the [C]eyesores
+[F]And the rest of our [C]lives would'a [G]fared well
+ 
+// Solo
+// [G]   [G]  [C]  [F] [C]   [F]  [C]  [G] 
+// [C]   [G]  [C]  [F] [F]   [C]   [F]  [C]  [G] 
+// [C] [Am] [G] [C] (hang and walk down to Am)
+ 
+// Outro
+// Intro
+
+SONG: Blues Run The Game
+ARTIST: Jackson C. Frank
+MODE: guitar
+CHORDS: 
+TAGS: blues fingerpicking
+
+// Capo: 6th fret
+
+[G] Catch a boat to [C] England, baby, [G] maybe to [C] Spain,
+[G] Wherever [C] I have gone, [G] wherever I've [C] been and gone,
+[G] Wherever [C] I have gone
+The [D] blues [C] are all the [G] same.
+ 
+[G] Send out for [C] whisky, baby, [G] send out for [C] gin,
+[G] Me and room [C] service, honey, [G] me and room [C] service, babe,
+[G] Me and room [C] service
+Well, [D] we're living [C] a life of [G] sin
+ 
+[G] When I'm not [C] drinking, baby, [G] you are on my [C] mind,
+[G] When I'm not [C] sleeping, honey, [G] when I ain't [C] sleeping, mama,
+[G] When I'm not [C] sleeping
+Well, you [D] know you'll [C] find me [G] crying.
+ 
+[G] Try another [C] city, baby, [G] another [C] town,
+[G] Wherever [C] I have gone, [G] wherever I've [C] been and gone,
+[G] Wherever I have gone
+The [D] blues     [C] come following [G] down.
+ 
+[G] Living is a [C] gamble, baby, [G] loving's much the [C] same,
+[G] Wherever [C] I have played, [G] wherever I [C] throw them dice,
+[G] Wherever [C] I have played
+The [D] blues    [C] have run the [G] game.
+ 
+[G] Maybe to[C]morrow, honey, [G]someplace down the [C] line,
+[G] I'll wake up [C] older, [G] so much [C] older, mama,
+[G] Wake up [C] older
+And [D] I'll just [C] stop all my [G] trying.
+ 
+[G] Catch a boat to [C] England, baby, [G] maybe to [C] Spain,
+[G] Wherever [C] I have gone, [G] wherever I've [C] been and gone,
+[G] Wherever [C] I have gone
+The [D] blues [C] are all the [G] same.
