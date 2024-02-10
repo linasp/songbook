@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/songbook/static/css/main.c497f0ad.css",
-    "main.js": "/songbook/static/js/main.b10ce6c6.js",
+    "main.js": "/songbook/static/js/main.841a1a59.js",
     "static/js/787.db7cc575.chunk.js": "/songbook/static/js/787.db7cc575.chunk.js",
     "index.html": "/songbook/index.html",
     "main.c497f0ad.css.map": "/songbook/static/css/main.c497f0ad.css.map",
-    "main.b10ce6c6.js.map": "/songbook/static/js/main.b10ce6c6.js.map",
+    "main.841a1a59.js.map": "/songbook/static/js/main.841a1a59.js.map",
     "787.db7cc575.chunk.js.map": "/songbook/static/js/787.db7cc575.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c497f0ad.css",
-    "static/js/main.b10ce6c6.js"
+    "static/js/main.841a1a59.js"
   ]
 }
