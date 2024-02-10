@@ -1,10 +1,11 @@
 TODO:
+- Link from linasp.me
 - Show chord diagrams
 - Handle error pages (404)
 - Handle data read errors
 - Display a loading page while loading
-- Publish v0 to web
-- Link from linasp.me
+- Create a favicon
+- Make tags filtering work with history
 
 FUTURE:
 - Figure out the font size situation
@@ -18,11 +19,12 @@ FUTURE:
 - Support song ideas to add ("coming soon")
 
 DONE:
-- Cache the loading of songs
-- Read songs from a published Google doc
-- Add auto scroll control
-- Implement search
-- Assign tags colors based on hash
-- Allow filtering songs by (multiple) tags 
-- Highlight chords in the song view
-- Implement a song view
++ Publish v0 to web
++ Cache the loading of songs
++ Read songs from a published Google doc
++ Add auto scroll control
++ Implement search
++ Assign tags colors based on hash
++ Allow filtering songs by (multiple) tags 
++ Highlight chords in the song view
++ Implement a song view
