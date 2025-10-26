@@ -2,12 +2,13 @@ import './App.css';
 import { useEffect, useRef, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { searchMatches, stringToPastelColor } from "./utils";
+import { Chords, Mode, Song } from './types';
 
-function SongTag({tag}) {
+function SongTag({tag}: {tag: string}) {
   return <span className="SongTag" style={{backgroundColor: stringToPastelColor(tag)}}>{tag}</span>
 }
 
-function SongIndexItem({song, addFilterTag}) {
+function SongIndexItem({song, addFilterTag}: {song: Song, addFilterTag: (tag: string) => void}) {
   const tags = song.tags ? song.tags.map((tag) => 
     <button key={tag} onClick={() => addFilterTag(tag)}>
       <SongTag tag={tag} />
@@ -22,24 +23,24 @@ function SongIndexItem({song, addFilterTag}) {
 }
 
 export function SongsIndex() {
-  const [filterTags, setFilterTags] = useState(new Set());
+  const [filterTags, setFilterTags] = useState(new Set<string>());
   const [searchQuery, setSearchQuery] = useState("");
-  function addFilterTag(tag) {
+  function addFilterTag(tag: string) {
     if (!filterTags.has(tag)) {
       setFilterTags(new Set(filterTags).add(tag));
     }
   }
-  function removeFilterTag(tag) {
+  function removeFilterTag(tag: string) {
     if (filterTags.has(tag)) {
       let newFilterTags = new Set(filterTags);
       newFilterTags.delete(tag);
       setFilterTags(newFilterTags);
     }
   }
-  function updateSearchQuery(event) {
+  function updateSearchQuery(event: React.ChangeEvent<HTMLInputElement>) {
     setSearchQuery(event.target.value);
   }
-  const songs = useLoaderData();
+  const songs = useLoaderData() as Song[];
   const filters = [...filterTags].map(tag =>
     <button key={tag} onClick={() => removeFilterTag(tag)}>
       <SongTag tag={tag} />
@@ -104,14 +105,14 @@ function ScrollControls() {
   );
 }
 
-function ChordDiagram({mode, chordName, fingerArray}) {
-  const canvasRef = useRef(null);
+function ChordDiagram({mode, chordName, fingerArray}: {mode: Mode, chordName: string, fingerArray: number[]}) {
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const fretBoardSize = 200
   const padding = 20
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas!.getContext('2d')!;
     const fretHeight = 40;
     const numStringsToShow = mode === 'guitar' ? 6 : 4;
     const stringGap = mode === 'guitar' ? 35 : 50;
@@ -160,7 +161,7 @@ function ChordDiagram({mode, chordName, fingerArray}) {
   );
 }
 
-function ChordDiagrams({chords, mode}) {
+function ChordDiagrams({chords, mode}: {chords: Chords, mode: Mode}) {
   return (
     <div className='ChordDiagrams'>
       {Object.entries(chords).map(([c, f]) => <ChordDiagram key={c} mode={mode} chordName={c} fingerArray={f} />)}
@@ -168,11 +169,11 @@ function ChordDiagrams({chords, mode}) {
   );
 }
 
-function SongChord({chord}) {
+function SongChord({chord}: {chord: string}) {
   return <span className='SongChord' style={{color: stringToPastelColor(chord)}}>{chord}</span>;
 }
 
-function SongLine({line}) {
+function SongLine({line}: {line: string}) {
   // TODO(linasp): refactor to something more pretty.
   if (!line) {
     return (<span className='SongLine SongLineEmpty'>&nbsp;</span>);
@@ -180,7 +181,7 @@ function SongLine({line}) {
 
   const chordRegex = /\[(.*?)\]/g;
   const chords = line.match(chordRegex);
-  var parsedLine = [];
+  let parsedLine = [];
 
   if (!chords) {
     parsedLine = [line];
@@ -199,15 +200,15 @@ function SongLine({line}) {
     }
   }
 
-  if (parsedLine[0].startsWith('//')) {
+  if (typeof parsedLine[0] === 'string' && parsedLine[0].startsWith('//')) {
     parsedLine[0] = parsedLine[0].replace("//", "").trim();
     return (<span className='SongLine SongLineComment'>{parsedLine}</span>);
   }
   return (<span className='SongLine'>{parsedLine}</span>)
 }
 
-export function Song() {
-  const song = useLoaderData();
+export function SongPage() {
+  const song = useLoaderData() as Song;
   // TODO: refactor tags into a helper element.
   const tags = song.tags ? song.tags.map((tag) => <SongTag key={tag} tag={tag} />) : "";
   return (

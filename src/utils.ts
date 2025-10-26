@@ -1,5 +1,7 @@
+import { Song } from "./types";
+
 // TODO(linasp); double check the logic here.
-export function stringToPastelColor(inputString) {
+export function stringToPastelColor(inputString: string) {
     // Simple hash function to convert the string into a number
     let hash = 0;
     for (let i = 0; i < inputString.length; i++) {
@@ -18,7 +20,7 @@ export function stringToPastelColor(inputString) {
     const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
     const p = 2 * l - q;
   
-    const rgb = (t) => {
+    const rgb = (t: number) => {
       t = (t + 1) % 1;
       if (t < 1 / 6) return p + (q - p) * 6 * t;
       if (t < 1 / 2) return q;
@@ -34,7 +36,7 @@ export function stringToPastelColor(inputString) {
     return `rgb(${r}, ${g}, ${b})`;
   }
 
-export function searchMatches(query, song) {
+export function searchMatches(query: string, song: Song) {
   query = query.toLowerCase();
   if (song.name.toLowerCase().includes(query)) {
     return true;
