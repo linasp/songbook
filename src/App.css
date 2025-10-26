@@ -1,3 +1,7 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Music&display=swap');
+
 body {
   padding: 0 1rem;
   /* text-align: center; */
@@ -10,6 +14,13 @@ body {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  padding: 0.25rem 0;
+  /* border-bottom: 1px solid orange; */
+}
+
+.SongsIndex li:before {
+  content: '♪';
+  color: #de8450;
 }
 
 .SongsIndex button {
@@ -26,11 +37,8 @@ body {
   border: 1px solid lightgray;
   padding: 0.25rem;
   font: inherit;
-}
-
-.SongsIndex .Search,
-.SongsIndex .Filters {
-  padding-top: 1rem;
+  font-size: 1rem;
+  border-radius: 3px;
 }
 
 .SongName a {
@@ -66,8 +74,29 @@ body {
   border-radius: 3px;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+h1 {
+  font-family: 'Shantell Sans', cursive, sans-serif;
+  text-align: center;
+}
+
+.noto-music-glyph {
+  font-family: 'Noto Music', sans-serif;
+}
+
+.Controls {
+  text-align: right;
+}
+
 .SongLine {
   display: block;
+  font-family: 'Shantell Sans', cursive, sans-serif;
 }
 
 .SongLineComment {
@@ -144,10 +173,4 @@ body {
   .ChordDiagram canvas {
     --scale: 0.5;
   }
-}
-
-.HomeLink {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
 }

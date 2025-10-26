@@ -80,20 +80,26 @@ export function SongsIndex() {
   }
   return (
     <div className="SongsIndex">
-      <div className="Controls">
-        <div className="Search">
-          <input
-            id="songartistquery "
-            aria-label="Search songs"
-            placeholder="Song name, artist..."
-            type="search"
-            name="songartistquery"
-            onChange={updateSearchQuery}
-            value={searchQuery}
-          />
+      <header>
+        <span className="HomeLink noto-music-glyph">
+          <a href="#/">𝄞</a>
+        </span>
+        <h1>Songbook</h1>
+        <div className="Controls">
+          <div className="Search">
+            <input
+              id="songartistquery"
+              aria-label="Search songs"
+              placeholder="Song name, artist…"
+              type="search"
+              name="songartistquery"
+              onChange={updateSearchQuery}
+              value={searchQuery}
+            />
+          </div>
+          <div className="Filters">{filters}</div>
         </div>
-        <div className="Filters">{filters}</div>
-      </div>
+      </header>
       <ul>{items}</ul>
     </div>
   );
@@ -261,12 +267,15 @@ export function SongPage() {
   const tags = song.tags ? song.tags.map((tag) => <SongTag key={tag} tag={tag} />) : '';
   return (
     <div>
-      <h1>
-        <span className="SongName">{song.name}</span>
-      </h1>
-      <span className="HomeLink">
-        <a href="#/">🏠</a>
-      </span>
+      <header>
+        <span className="HomeLink noto-music-glyph">
+          <a href="#/">𝄞</a>
+        </span>
+        <h1>
+          <span className="SongName">{song.name}</span>
+        </h1>
+        <span />
+      </header>
       <span className="SongArtist">{song.artist}</span>
       <span className="SongTags">{tags}</span>
       <ChordDiagrams mode={song.mode} chords={song.chords} />
