@@ -47,7 +47,7 @@ export function SongsIndex() {
   }
   function removeFilterTag(tag: string) {
     if (filterTags.has(tag)) {
-      let newFilterTags = new Set(filterTags);
+      const newFilterTags = new Set(filterTags);
       newFilterTags.delete(tag);
       setFilterTags(newFilterTags);
     }
@@ -102,7 +102,7 @@ export function SongsIndex() {
 function ScrollControls() {
   const [scrollSpeed, setScrollSpeed] = useState(0);
   useEffect(() => {
-    let interval = setInterval(() => {
+    const interval = setInterval(() => {
       if (scrollSpeed) {
         window.scrollBy(0, scrollSpeed);
       }

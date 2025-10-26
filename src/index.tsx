@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { SongsIndex, SongPage } from './App';
 import { loadSongs, loadSongById } from './data';
 

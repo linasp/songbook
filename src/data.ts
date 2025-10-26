@@ -98,7 +98,7 @@ export async function loadSongs() {
               const [chordName, fingerArray] = parseChordString(c);
               currentSong.chords[chordName] = fingerArray;
             } catch (err) {
-              console.log(err);
+              console.error(err);
             }
           });
       } else if (line.startsWith('TAGS:')) {
