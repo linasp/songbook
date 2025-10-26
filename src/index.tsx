@@ -1,6 +1,5 @@
-import React from 'react';
+import './globals.css';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { SongsIndex, SongPage } from './App';
 import { loadSongs, loadSongById } from './data';

@@ -197,7 +197,7 @@ function ChordDiagram({
 
   return (
     <div className="ChordDiagram">
-      <h3>{chordName}</h3>
+      <h3 style={{ color: stringToPastelColor(chordName) }}>{chordName}</h3>
       <canvas ref={canvasRef} width={fretBoardSize + padding} height={fretBoardSize} />
     </div>
   );
@@ -264,6 +264,9 @@ export function SongPage() {
       <h1>
         <span className="SongName">{song.name}</span>
       </h1>
+      <span className="HomeLink">
+        <a href="#/">🏠</a>
+      </span>
       <span className="SongArtist">{song.artist}</span>
       <span className="SongTags">{tags}</span>
       <ChordDiagrams mode={song.mode} chords={song.chords} />

@@ -1,12 +1,15 @@
 body {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.5vw;
+  padding: 0 1rem;
+  /* text-align: center; */
+  font-size: clamp(12px, 2.5vw, 24px);
 }
 
 .SongsIndex li {
   list-style: none;
-  margin-top: 0.1em;
+  margin-top: 0.25rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .SongsIndex button {
@@ -21,13 +24,13 @@ body {
 
 .SongsIndex input {
   border: 1px solid lightgray;
-  padding: 0.2em;
+  padding: 0.25rem;
   font: inherit;
 }
 
 .SongsIndex .Search,
 .SongsIndex .Filters {
-  padding-top: 1em;
+  padding-top: 1rem;
 }
 
 .SongName a {
@@ -48,11 +51,19 @@ body {
   content: ') ';
 }
 
+.SongTags {
+  display: flex;
+  align-items: center;
+}
+
 .SongTag {
-  color: lightgrey;
+  display: block;
+  color: #fff;
   background-color: #de8450;
-  padding: 0 0.1em;
-  margin-right: 0.3em;
+  padding: 0.1rem 0.5rem;
+  margin-right: 0.3rem;
+  font-size: 0.8rem;
+  border-radius: 3px;
 }
 
 .SongLine {
@@ -74,7 +85,7 @@ body {
 
 .SongChord {
   color: #de8450;
-  padding: 0 0.1em;
+  padding: 0 0.1rem;
   font-style: normal;
   border-radius: 5px;
 }
@@ -106,8 +117,37 @@ body {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  overflow-x: auto;
+  flex-wrap: wrap;
 }
 
 .ChordDiagrams h3 {
   margin: 0;
+}
+
+.ChordDiagram {
+  text-align: center;
+}
+
+.ChordDiagram canvas {
+  --scale: 1;
+  zoom: var(--scale);
+}
+
+@media (max-width: 768px) {
+  .ChordDiagram canvas {
+    --scale: 0.75;
+  }
+}
+
+@media (max-width: 512px) {
+  .ChordDiagram canvas {
+    --scale: 0.5;
+  }
+}
+
+.HomeLink {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }

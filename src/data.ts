@@ -109,6 +109,7 @@ export async function loadSongs() {
         }
       }
     });
+    songs.sort((a, b) => a.name.localeCompare(b.name));
     didLoadSongs = true;
   }
 
