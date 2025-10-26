@@ -4,7 +4,7 @@ import { Link, useLoaderData } from "react-router-dom";
 import { searchMatches, stringToPastelColor } from "./utils";
 
 function SongTag({tag}) {
-  return <span className="SongTag" style={{backgroundColor: stringToPastelColor(tag)}}>{tag}</span>;
+  return <span className="SongTag" style={{backgroundColor: stringToPastelColor(tag)}}>{tag}</span>
 }
 
 function SongIndexItem({song, addFilterTag}) {
