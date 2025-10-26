@@ -49,11 +49,6 @@ function parseChordString(chordString) {
   return [chordName, fingerArray];
 }
 
-
-export async function loadSongsFromLocal() {
-  return (await fetch("/songs.txt")).text();
-}
-
 export async function loadSongsFromGoogleDoc() {
   const GOOGLE_DOC_URL = "https://docs.google.com/document/d/e/2PACX-1vTnd3s7w4Fuj-Y7x0LCzxRu0NhDkcritth1LAIITv9j4Gz9NbpO2vW4Py7S2VrRFsD7tlvHBU_Pq_d2/pub";
   const response = await fetch(GOOGLE_DOC_URL);
