@@ -9,4 +9,4 @@ export type Song = {
   tags: string[];
   content: string[];
   mode: Mode;
-}
+};
