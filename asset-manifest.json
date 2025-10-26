@@ -1,0 +1,16 @@
+{
+  "files": {
+    ".DS_Store": "/songbook/.DS_Store",
+    "apple-touch-icon.jpg": "/songbook/apple-touch-icon.jpg",
+    "asset-manifest.json": "/songbook/asset-manifest.json",
+    "favicon.jpg": "/songbook/favicon.jpg",
+    "humans.txt": "/songbook/humans.txt",
+    "index.html": "/songbook/index.html",
+    "logo.jpg": "/songbook/logo.jpg",
+    "manifest.json": "/songbook/manifest.json",
+    "robots.txt": "/songbook/robots.txt",
+    "static/index-BOX6_zUm.js": "/songbook/static/index-BOX6_zUm.js",
+    "static/index-D1y9kj9Z.css": "/songbook/static/index-D1y9kj9Z.css"
+  },
+  "entrypoints": []
+}
