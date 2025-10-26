@@ -98,49 +98,50 @@ function ScrollControls() {
   return (
     <div className='AutoScroll'>
         <button onClick={() => { setScrollSpeed(0); window.scrollTo(0, 0) }}>⬆️</button>
-        <button onClick={() => { setScrollSpeed(0) }}>⏹</button>
+        <button onClick={() => { setScrollSpeed(0) }}>🛑</button>
         <button onClick={() => { setScrollSpeed(scrollSpeed + 1) }}>⏬</button>
     </div>
   );
 }
 
-function ChordDiagram(chordName, fingerArray) {
+function ChordDiagram({mode, chordName, fingerArray}) {
   const canvasRef = useRef(null);
+  const fretBoardSize = 200
+  const padding = 20
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
-    const fretWidth = 40;
-    const stringGap = 30;
+    const fretHeight = 40;
+    const numStringsToShow = mode === 'guitar' ? 6 : 4;
+    const stringGap = mode === 'guitar' ? 35 : 50;
     const circleRadius = 10;
 
     // Draw fretboard (6 vertical lines)
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < numStringsToShow; i++) {
       ctx.beginPath();
-      ctx.moveTo(i * stringGap + 20, 20);
-      ctx.lineTo(i * stringGap + 20, 20 + 4 * fretWidth);
+      ctx.moveTo(i * stringGap + padding, padding);
+      ctx.lineTo(i * stringGap + padding, padding + 4 * fretHeight);
       ctx.stroke();
     }
 
-    // Draw frets (5 horizontal)
     for (let i = 0; i < 5; i++) {
       ctx.beginPath();
-      ctx.moveTo(20, 20 + i * fretWidth);
-      ctx.lineTo(20 + 5 * stringGap, 20 + i * fretWidth);
+      ctx.moveTo(padding, padding + i * fretHeight);
+      ctx.lineTo(padding + (numStringsToShow - 1) * stringGap, padding + i * fretHeight);
       ctx.stroke();
     }
 
-    // Drawing fingers for C major chord
-    // The positions are based on a typical C major fingering on a guitar
-    const fingerPositions = [
-      { string: 5, fret: 3 },  // 3rd fret, A string (C note)
-      { string: 4, fret: 2 },  // 2nd fret, D string (E note)
-      { string: 2, fret: 1 }   // 1st fret, B string (C note)
-    ];
+    const fingerPositions = fingerArray.map((pos, index) => ({
+      string: index + 1,
+      fret: pos
+    }))
 
     fingerPositions.forEach(pos => {
-      const x = (6 - pos.string + 1) * stringGap - circleRadius;
-      const y = pos.fret * fretWidth;
+      if (pos.fret < 1) return
+
+      const x = (pos.string - 1) * stringGap + padding;
+      const y = pos.fret * fretHeight;
       ctx.beginPath();
       ctx.arc(x, y, circleRadius, 0, 2 * Math.PI, false);
       ctx.fillStyle = 'black';
@@ -149,22 +150,20 @@ function ChordDiagram(chordName, fingerArray) {
       ctx.strokeStyle = '#000000';
       ctx.stroke();
     });
-  }, []);
+  }, [fingerArray, mode]);
 
   return (
     <div className='ChordDiagram'>
-      <p>Booboo</p>
       <h3>{chordName}</h3>
-      <canvas ref={canvasRef} width={200} height={200} />
+      <canvas ref={canvasRef} width={fretBoardSize + padding} height={fretBoardSize} />
     </div>
   );
 }
 
-function ChordDiagrams({chords}) {
-  console.log(chords);
+function ChordDiagrams({chords, mode}) {
   return (
     <div className='ChordDiagrams'>
-      {Array.from(chords).map(([c, f]) => <ChordDiagram key={c} chordName={c} fingerArray={f} />)}
+      {Object.entries(chords).map(([c, f]) => <ChordDiagram key={c} mode={mode} chordName={c} fingerArray={f} />)}
     </div>
   );
 }
@@ -218,9 +217,8 @@ export function Song() {
       </h1>
       <span className="SongArtist">{song.artist}</span>
       <span className="SongTags">{tags}</span>
-      <ChordDiagrams chords={song.chords} />
-      {/* TODO(linasp): add unique key here */}
-      {song.content.map(line => <SongLine line={line} />)}
+      <ChordDiagrams mode={song.mode} chords={song.chords} />
+      {song.content.map((line, index) => <SongLine key={index} line={line} />)}
       <ScrollControls />
     </div>
   );

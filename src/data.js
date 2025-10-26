@@ -69,7 +69,6 @@ export async function loadSongs() {
       // Only read once and cache the result.
       const content = await loadSongsFromGoogleDoc();
       // TODO: check for error conditions
-      console.log(content);
       songs = [];
       var currentSong = null;
       content.split("\n").forEach((line) => {
@@ -79,7 +78,7 @@ export async function loadSongs() {
           currentSong.name = line.replace("SONG:", "").trim();
           currentSong.id = convertToID(currentSong.name);
           currentSong.content = [];
-          currentSong.chords = new Map();
+          currentSong.chords = {};
           currentSong.mode = null;
           currentSong.tags = [];
           songs.push(currentSong);

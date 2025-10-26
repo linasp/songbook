@@ -96,3 +96,19 @@ body {
 	cursor: pointer;
 	outline: inherit;
 }
+
+.ChordDiagrams {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.ChordDiagrams h3 {
+  margin: 0;
+}
