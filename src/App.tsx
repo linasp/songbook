@@ -1,7 +1,7 @@
 import './App.css';
 import { useEffect, useRef, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
-import { searchMatches, stringToPastelColor } from './utils';
+import { chordToPastelColor, searchMatches, stringToPastelColor } from './utils';
 import { Chords, Mode, Song } from './types';
 
 function SongTag({ tag }: { tag: string }) {
@@ -203,7 +203,7 @@ function ChordDiagram({
 
   return (
     <div className="ChordDiagram">
-      <h3 style={{ color: stringToPastelColor(chordName) }}>{chordName}</h3>
+      <h3 style={{ color: chordToPastelColor(chordName) }}>{chordName}</h3>
       <canvas ref={canvasRef} width={fretBoardSize + padding} height={fretBoardSize} />
     </div>
   );
@@ -221,7 +221,7 @@ function ChordDiagrams({ chords, mode }: { chords: Chords; mode: Mode }) {
 
 function SongChord({ chord }: { chord: string }) {
   return (
-    <span className="SongChord" style={{ color: stringToPastelColor(chord) }}>
+    <span className="SongChord" style={{ color: chordToPastelColor(chord) }}>
       {chord}
     </span>
   );
